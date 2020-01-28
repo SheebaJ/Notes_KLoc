@@ -23,7 +23,8 @@ def t(l)
     end
     for i in l
         if i.include? 0
-            return -1# isIt = true
+			return -1
+			# isIt = true
         end
     end
     return 0
