@@ -9,4 +9,4 @@ end
 p expanded_form(70304)
 
 
-# https://github.com/adrianeyre/codewars/blob/master/Ruby/5KYU/weight.rb#L54
+
