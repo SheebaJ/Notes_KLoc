@@ -1,4 +1,13 @@
-require './arr.rb' 
+class Arr
+   def vowe?(x)
+       if !x.nil? and x != " " and @x.is_a?Integer
+       x.delete('aeiouAEIOU').split.join(" ")
+       else 
+           return false
+   end
+end
+end
+
 RSpec.describe Arr do 
    context "With valid input" do 
       
@@ -23,6 +32,12 @@ RSpec.describe Arr do
      it "should detect for empty string" do 
         s= Arr.new 
         str = ""
+        s.vowe?(str)  == false
+     end 
+
+     it "should detect when it is a number" do 
+        s= Arr.new 
+        str = 121
         s.vowe?(str)  == false
      end 
 
